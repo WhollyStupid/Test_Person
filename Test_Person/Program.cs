@@ -76,3 +76,11 @@ public class Motorcycle
     public string tankSize;
 }
 
+public enum MotorcycleBrands
+{
+    Suzuki,
+    Yamaha,
+    Harley_Davidson,
+    Indian,
+}
+
