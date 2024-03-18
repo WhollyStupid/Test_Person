@@ -69,7 +69,7 @@ public enum DogBreeds
     Samoyed,
     GermanShepherd,
     Labrador,
-    Belgianmalinois
+    BelgianMalinois
 
 }
 
