@@ -57,6 +57,7 @@ public enum JobTypes
     Comedian,
     Mechanic,
     Programmer,
-    Archelogist
+    Archelogist,
+    Doctor
 }
 
