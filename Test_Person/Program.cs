@@ -5,9 +5,9 @@
     int age;
     JobTypes? job; //Nullable
 
-    public Person(string firstName, string lastName, int age, JobTypes? job)
+    public Person(string myfirstName, string lastName, int age, JobTypes? job)
     {
-        this.firstName = firstName;
+        this.firstName = myfirstName;
         this.lastName = lastName;
         this.age = age;
         if (this.age < 0)
@@ -26,6 +26,8 @@
             this.job = null;
         }
     }
+
+
 
     public string GetFullName()
     {
@@ -48,7 +50,7 @@
     }
 }
 
-public enum JobTypes
+public enum JobTypes // he aint got no job no more
 {
     Teacher,
     Fireman,
@@ -57,5 +59,12 @@ public enum JobTypes
     Comedian,
     Mechanic,
     Programmer
+}
+
+public class dog
+{
+    public int age;
+    public bool cute;
+    public string breed;
 }
 
