@@ -17,6 +17,7 @@ namespace Nunit_1
             person.AssignNewJob("Poor student");
             Assert.IsNull(person.GetJob);
         }
+
         [Test]
         public void BirthdayNotification()
         {
