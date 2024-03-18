@@ -4,8 +4,9 @@
     string lastName;
     int age;
     JobTypes? job; //Nullable
+    DogBreeds? dog;
 
-    public Person(string myfirstName, string lastName, int age, JobTypes? job)
+    public Person(string myfirstName, string lastName, int age, JobTypes? job, DogBreeds? dog)
     {
         this.firstName = myfirstName;
         this.lastName = lastName;
@@ -13,6 +14,7 @@
         if (this.age < 0)
             this.age = 0;
         this.job = job;
+        this.dog = dog;
     }
 
     public void AssignNewJob(string job)
@@ -24,6 +26,17 @@
         catch (ArgumentException)
         {
             this.job = null;
+        }
+    }
+    public void ChooseNewDog(string dog)
+    {
+        try
+        {
+            this.dog = (DogBreeds)Enum.Parse(typeof(DogBreeds), dog);
+        }
+        catch
+        {
+            this.dog = null;
         }
     }
 
@@ -101,4 +114,5 @@ public enum MotorcycleBrands
     Kawazaki,
     Boss_Hoss
 }
+
 
