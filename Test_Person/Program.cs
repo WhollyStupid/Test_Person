@@ -4,15 +4,17 @@
     string lastName;
     int age;
     JobTypes? job; //Nullable
+    DogBreeds? dog;
 
-    public Person(string firstName, string lastName, int age, JobTypes? job)
+    public Person(string myfirstName, string lastName, int age, JobTypes? job, DogBreeds? dog)
     {
-        this.firstName = firstName;
+        this.firstName = myfirstName;
         this.lastName = lastName;
         this.age = age;
         if (this.age < 0)
             this.age = 0;
         this.job = job;
+        this.dog = dog;
     }
 
     public void AssignNewJob(string job)
@@ -26,10 +28,21 @@
             this.job = null;
         }
     }
+    public void ChooseNewDog(string dog)
+    {
+        try
+        {
+            this.dog = (DogBreeds)Enum.Parse(typeof(DogBreeds), dog);
+        }
+        catch
+        {
+            this.dog = null;
+        }
+    }
 
     public string GetFullName()
     {
-        return firstName + " " + lastName;
+        return firstName + " " + lastName + " " + firstName; // ekstra first name added
     }
 
     public int GetAge()
@@ -48,7 +61,7 @@
     }
 }
 
-public enum JobTypes
+public enum JobTypes // he aint got no job no more
 {
     Teacher,
     Fireman,
@@ -63,6 +76,46 @@ public enum JobTypes
     PerryThePlatypus,
     Alchemist,
     ForestRanger,
-    Wizard
+    Wizard,
+    PerryThePlatypus
 }
+
+public enum DogBreeds
+{
+    GoldenRetriever,
+    Samoyed,
+    GermanShepherd,
+    Labrador,
+    BelgianMalinois
+}
+
+
+public class dog
+{
+    public int age;
+    public bool cute;
+    public string breed;
+}
+
+public class Motorcycle
+{
+    public string name;
+    public int manufactureDate;
+    public string tankSize;
+}
+
+public enum MotorcycleBrands
+{
+    Suzuki,
+    Yamaha,
+    Harley_Davidson,
+    Indian,
+    Honda,
+    Triumph,
+    Ducati,
+    Yamasaki,
+    Kawazaki,
+    Boss_Hoss
+}
+
 
