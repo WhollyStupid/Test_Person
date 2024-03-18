@@ -56,6 +56,11 @@ public enum JobTypes
     Politician,
     Comedian,
     Mechanic,
-    Programmer
+    Programmer,
+    Archelogist,
+    Fuckboy,
+    SecretAgent,
+    PerryThePlatypus,
+    Alchemist
 }
 
