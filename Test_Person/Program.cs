@@ -78,7 +78,7 @@ public enum JobTypes // he aint got no job no more
     ForestRanger,
     Wizard,
     PoorBoy,
-    PerryThePlatypus
+    PerryThePlatypusPlumber
 }
 
 public enum DogBreeds
