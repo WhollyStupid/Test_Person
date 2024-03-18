@@ -63,5 +63,6 @@ public enum JobTypes
     PerryThePlatypus,
     Alchemist,
     ForestRanger,
+    Wizard
 }
 
