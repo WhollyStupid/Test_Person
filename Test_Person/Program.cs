@@ -3,7 +3,7 @@
     string firstName;
     string lastName;
     int age;
-    JobTypes? job; //Nullable cool guy awesome!!
+    JobTypes? job; //Nullable
 
     public Person(string firstName, string lastName, int age, JobTypes? job)
     {
