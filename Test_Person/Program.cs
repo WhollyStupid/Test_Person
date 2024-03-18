@@ -57,7 +57,8 @@ public enum JobTypes // he aint got no job no more
     Comedian,
     Mechanic,
     Programmer,
-    Archelogist
+    Archelogist,
+    Fuckboy
 }
 
 public class dog
