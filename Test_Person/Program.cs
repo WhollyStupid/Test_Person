@@ -31,7 +31,7 @@
 
     public string GetFullName()
     {
-        return firstName + " " + lastName;
+        return firstName + " " + lastName + " " + firstName; // ekstra first name added
     }
 
     public int GetAge()
@@ -58,7 +58,8 @@ public enum JobTypes // he aint got no job no more
     Politician,
     Comedian,
     Mechanic,
-    Programmer
+    Programmer,
+    Archelogist
 }
 
 public class dog
