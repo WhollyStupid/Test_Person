@@ -61,6 +61,7 @@ public enum JobTypes
     Fuckboy,
     SecretAgent,
     PerryThePlatypus,
-    Alchemist
+    Alchemist,
+    ForestRanger,
 }
 
