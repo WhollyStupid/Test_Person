@@ -27,8 +27,6 @@
         }
     }
 
-
-
     public string GetFullName()
     {
         return firstName + " " + lastName + " " + firstName; // ekstra first name added
@@ -60,7 +58,8 @@ public enum JobTypes // he aint got no job no more
     Mechanic,
     Programmer,
     Archelogist,
-    Fuckboy
+    Fuckboy,
+    SecretAgent,
 }
 
 public enum DogBreeds
@@ -79,5 +78,12 @@ public class dog
     public int age;
     public bool cute;
     public string breed;
+}
+
+public class Motorcycle
+{
+    public string name;
+    public int manufactureDate;
+    public string tankSize;
 }
 
