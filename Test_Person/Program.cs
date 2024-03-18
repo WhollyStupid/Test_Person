@@ -94,5 +94,11 @@ public enum MotorcycleBrands
     Yamaha,
     Harley_Davidson,
     Indian,
+    Honda,
+    Triumph,
+    Ducati,
+    Yamasaki,
+    Kawazaki,
+    Boss_Hoss
 }
 
