@@ -69,3 +69,10 @@ public class dog
     public string breed;
 }
 
+public class Motorcycle
+{
+    public string name;
+    public int manufactureDate;
+    public string tankSize;
+}
+
