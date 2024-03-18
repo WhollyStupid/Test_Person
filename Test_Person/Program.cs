@@ -77,6 +77,7 @@ public enum JobTypes // he aint got no job no more
     Alchemist,
     ForestRanger,
     Wizard,
+    PoorBoy,
     PerryThePlatypus
 }
 
