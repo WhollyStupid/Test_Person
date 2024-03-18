@@ -27,8 +27,6 @@
         }
     }
 
-
-
     public string GetFullName()
     {
         return firstName + " " + lastName + " " + firstName; // ekstra first name added
