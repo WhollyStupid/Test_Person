@@ -63,6 +63,17 @@ public enum JobTypes // he aint got no job no more
     Fuckboy
 }
 
+public enum DogBreeds
+{
+    GoldenRetriever,
+    Samoyed,
+    GermanShepherd,
+    Labrador,
+    Belgianmalinois
+
+}
+
+
 public class dog
 {
     public int age;
