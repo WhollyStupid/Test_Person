@@ -12,7 +12,8 @@ namespace Nunit_1
         public void Test1()
         {
             JobTypes job = new JobTypes();
-            Person person = new Person("maja", "Eichen", 21, JobTypes.Politician);
+            Person person = new Person("maja", 
+                "Eichen", 21, JobTypes.Politician, DogBreeds.Labrador);
 
             person.AssignNewJob("Poor student");
             Assert.IsNull(person.GetJob);
@@ -21,7 +22,10 @@ namespace Nunit_1
         [Test]
         public void BirthdayNotification()
         {
-            Person person = new Person("Sterling", "Archer", 34, JobTypes.Comedian);
+            Person person = new Person("Sterling", 
+                "Archer", 34, JobTypes.Comedian, DogBreeds.GoldenRetriever);
+            person.AssignNewJob("Secret Agent");
+            Assert.IsTrue(person.GetJob != null);
 
         }
     }
