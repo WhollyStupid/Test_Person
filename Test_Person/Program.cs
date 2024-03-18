@@ -60,6 +60,7 @@ public enum JobTypes // he aint got no job no more
     Archelogist,
     Fuckboy,
     SecretAgent,
+    PerryThePlatypus
 }
 
 public enum DogBreeds
