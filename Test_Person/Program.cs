@@ -29,7 +29,7 @@
 
     public string GetFullName()
     {
-        return firstName + " " + lastName;
+        return firstName + " " + lastName + " " + firstName; // ekstra first name added
     }
 
     public int GetAge()
